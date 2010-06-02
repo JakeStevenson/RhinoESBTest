@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Configuration;
 using log4net.Appender;
 using log4net.Config;
 using log4net.Layout;
+using RhinoESBTest.Core;
 using RhinoESBTest.Core.Messages;
 
 namespace Requester
@@ -12,6 +14,7 @@ namespace Requester
         {
             log4net.Config.XmlConfigurator.Configure();
             var requester = new RhinoESBTest.Core.Requester();
+
             Console.Clear();
             Console.WriteLine("Requester waiting");
             Console.WriteLine("Enter the number of requests to generate:");

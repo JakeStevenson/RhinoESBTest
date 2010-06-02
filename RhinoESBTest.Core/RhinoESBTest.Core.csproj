@@ -68,9 +68,11 @@
       <HintPath>..\ExternalLibraries\Rhino.ServiceBus.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
+    <Reference Include="System.Messaging" />
     <Reference Include="System.Xml.Linq">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
@@ -82,6 +84,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Messages\VideoToEncode.cs" />
+    <Compile Include="PrepareQueues.cs" />
     <Compile Include="Worker.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Requester.cs" />
