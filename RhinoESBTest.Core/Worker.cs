@@ -1,4 +1,5 @@
-﻿using Castle.Core.Logging;
+﻿using System;
+using Castle.Core.Logging;
 using Rhino.ServiceBus;
 using RhinoESBTest.Core.Messages;
 
@@ -20,7 +21,7 @@ namespace RhinoESBTest.Core
             Working = true;
             System.Threading.Thread.Sleep(1000);
             Working = false;
-            Logger.Info("Completed {0}", message.FileName);
+            Console.WriteLine("Completed {0}", message.FileName);
         }
     }
 }
