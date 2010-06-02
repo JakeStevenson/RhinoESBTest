@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RhinoESBTest.Core", "RhinoESBTest.Core.csproj", "{80785001-537B-4147-A45C-AC614AA5A553}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RhinoESBTest.Core", "RhinoESBTest.Core\RhinoESBTest.Core.csproj", "{80785001-537B-4147-A45C-AC614AA5A553}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Requester", "..\Requester\Requester.csproj", "{A0D4E916-5B8E-4D5D-959F-6C48DF45DB1A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Requester", "Requester\Requester.csproj", "{A0D4E916-5B8E-4D5D-959F-6C48DF45DB1A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encoder", "..\Encoder\Encoder.csproj", "{1CBC046B-B411-4231-BC20-EC86D594C9D9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encoder", "Encoder\Encoder.csproj", "{1CBC046B-B411-4231-BC20-EC86D594C9D9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
