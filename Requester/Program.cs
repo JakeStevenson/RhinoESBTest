@@ -10,6 +10,7 @@ namespace Requester
     {
         static void Main()
         {
+            log4net.Config.XmlConfigurator.Configure();
             var requester = new RhinoESBTest.Core.Requester();
             Console.WriteLine("Requester waiting");
             Console.WriteLine("Enter the number of requests to generate:");
