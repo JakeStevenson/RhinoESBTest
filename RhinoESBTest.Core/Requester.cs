@@ -18,7 +18,6 @@ namespace RhinoESBTest.Core
             _container = new WindsorContainer(new XmlInterpreter());
             _container.Kernel.AddFacility("requester.esb", new RhinoServiceBusFacility());
             _endpoint = new Uri(ConfigurationManager.AppSettings["encoderQueue"]);
-            PrepareQueues.Prepare(ConfigurationManager.AppSettings["encoderQueue"], QueueType.Standard);
         }
         public void Request(Messages.VideoToEncode encode)
         {
