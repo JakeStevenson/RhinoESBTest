@@ -1,9 +1,10 @@
 ﻿using Castle.Core.Logging;
 using Rhino.ServiceBus;
+using RhinoESBTest.Core.Messages;
 
 namespace RhinoESBTest.Core
 {
-    public class Worker : ConsumerOf<Messages.VideoToEncode>
+    public class Worker : ConsumerOf<VideoToEncode>
     {
 
         private ILogger _logger = NullLogger.Instance;
@@ -14,7 +15,7 @@ namespace RhinoESBTest.Core
         }
         public bool Working;
 
-        public void Consume(Messages.VideoToEncode message)
+        public void Consume(VideoToEncode message)
         {
             Working = true;
             System.Threading.Thread.Sleep(1000);
